@@ -94,7 +94,7 @@ for c, c_dets in all_classes.items():
 
     final_list.append({
         'id': c,
-        'name': title,
+        'name': ' '.join(title.split(' ')[2:]),
         'timings': list(c_dets.get('timings')),
         'des': desc,
         'credits': 4

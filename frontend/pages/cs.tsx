@@ -1,7 +1,7 @@
 export const CSData = [
 	{
 		"id": "CS-UH 1001",
-		"name": "CS-UH 1001 Introduction to Computer Science",
+		"name": "Introduction to Computer Science",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Mon,Wed 8.30 AM - 11.10 AM at C2 W008 with Potsch, Thomas",
 			"08/29/2022 - 12/13/2022 Tue,Thu 8.30 AM - 11.10 AM at A4 006 with Potsch, Thomas",
@@ -18,7 +18,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 1002",
-		"name": "CS-UH 1002 Discrete Mathematics",
+		"name": "Discrete Mathematics",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Tue,Thu 9.55 AM - 11.10 AM at C2 E047 with Ahmed, Dena; Chaqfeh, Moumena",
 			"08/29/2022 - 12/13/2022 Tue,Thu 11.20 AM - 12.35 PM at C2 W005 with Chaqfeh, Moumena",
@@ -36,7 +36,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 1050",
-		"name": "CS-UH 1050 Data Structures",
+		"name": "Data Structures",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Mon,Wed 9.55 AM - 11.10 AM at C2 E048 with Oudah, Mai",
 			"08/29/2022 - 12/13/2022 Fri 10.50 AM - 12.05 PM at C2 W007 with Mengal, Khalid; Oudah, Mai",
@@ -56,7 +56,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 1052",
-		"name": "CS-UH 1052 Algorithms",
+		"name": "Algorithms",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Mon,Wed 11.20 AM - 12.35 PM at C2 E051 with Ruszinko, Miklos; Ray, Saurabh",
 			"08/29/2022 - 12/13/2022 Mon,Wed 2.10 PM - 3.25 PM at C2 W007 with Ruszinko, Miklos",
@@ -70,7 +70,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 2010",
-		"name": "CS-UH 2010 Computer Systems Organization",
+		"name": "Computer Systems Organization",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Mon,Wed 9.55 AM - 11.10 AM at C2 E049 with Mourad, Azzam",
 			"08/29/2022 - 12/13/2022 Mon,Wed 3.35 PM - 4.50 PM at C2 W005 with Mengal, Khalid; Mourad, Azzam",
@@ -82,7 +82,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 2012",
-		"name": "CS-UH 2012 Software Engineering",
+		"name": "Software Engineering",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Tue,Thu 11.20 AM - 12.35 PM at A2 003 with Ahmed, Dena; Oudah, Mai",
 			"01/24/2023 - 05/12/2023 Tue,Thu 9.55 AM - 11.10 AM at EAST_ADMIN 003 with Oudah, Mai; Ahmed, Dena"
@@ -92,7 +92,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 2219E",
-		"name": "CS-UH 2219E Computational Social Science",
+		"name": "Computational Social Science",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Tue,Thu 11.20 AM - 12.35 PM at COMP_RES 005 with AlShebli, Bedoor",
 			"08/29/2022 - 12/13/2022 Fri 10.50 AM - 12.05 PM at C2 E051 with Saboor, Sara"
@@ -102,7 +102,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 3010",
-		"name": "CS-UH 3010 Operating Systems",
+		"name": "Operating Systems",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Tue,Thu 9.55 AM - 11.10 AM at C2 E050 with Abouzied, Azza",
 			"01/24/2023 - 05/12/2023 Mon,Wed 12.45 PM - 2.00 PM at C2 E049 with Delis, Alex",
@@ -113,7 +113,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 3012",
-		"name": "CS-UH 3012 Computer Networks",
+		"name": "Computer Networks",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Mon,Wed 9.55 AM - 11.10 AM at C2 E052 with Zaki, Yasir",
 			"08/29/2022 - 12/13/2022 Fri 2.20 PM - 3.35 PM at C2 E048 with Zaki, Yasir",
@@ -127,7 +127,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 3090",
-		"name": "CS-UH 3090 Research Seminar in Computer Science",
+		"name": "Research Seminar in Computer Science",
 		"timings": [
 			"01/24/2023 - 05/12/2023 Tue 5.30 PM - 8.30 PM at C2 NO ROOM with Abouzied, Azza"
 		],
@@ -136,7 +136,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 3210",
-		"name": "CS-UH 3210 Computer Security",
+		"name": "Computer Security",
 		"timings": [
 			"08/29/2022 - 12/13/2022 Tue,Thu 3.35 PM - 4.50 PM at A2 002 with Popper, Christina; Randhawa, Shan Muhammad",
 			"01/24/2023 - 05/12/2023 Mon,Wed 5.00 PM - 6.15 PM at C2 E048 with Popper, Christina"
@@ -146,7 +146,7 @@ export const CSData = [
 	},
 	{
 		"id": "CS-UH 3211",
-		"name": "CS-UH 3211 Bioinformatics",
+		"name": "Bioinformatics",
 		"timings": [
 			"01/24/2023 - 05/12/2023 Mon,Wed 9.55 AM - 11.10 AM at C2 E048 with Oudah, Mai; Jha, Aashish",
 			"01/24/2023 - 05/12/2023 Thu 2.10 PM - 3.25 PM at C2 306 with Oudah, Mai; Jha, Aashish"
