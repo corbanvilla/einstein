@@ -93,9 +93,11 @@ for c, c_dets in all_classes.items():
             print(f'foudn {c} in {title} | setting {description}')
 
     final_list.append({
-        'title': title,
+        'id': c,
+        'name': title,
         'timings': list(c_dets.get('timings')),
-        'description': desc,
+        'des': desc,
+        'credits': 4
     })
 
 print(dumps(final_list))

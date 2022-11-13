@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useEffect } from 'react';
 import styles from '../styles/Home.module.css'
 import { InferGetStaticPropsType } from 'next'
+import { CSData } from './cs';
 
 import Draggable from 'react-draggable';
 import React from 'react'
@@ -18,6 +19,14 @@ type DraggableData = {
   lastX: number, lastY: number
 };
 
+interface ClassData {
+  id: string;
+  name: string;
+  des: string;
+  timings: string[];
+  credits: number; 
+}
+
 // const displayData = (i:any, data:any) => {
 //   console.log(i);
 //   console.log(data);
@@ -27,32 +36,44 @@ const printCoords = (i:any, data:any) => {
   console.log(i);
   console.log(data);
 }
- 
-export const Home: NextPage = () => {
 
-  const classes = [
-    {
-      id: 'CS-1001',
-      name: 'Intro to CS',
-      credits: 4,
-      des: 'The intro class bro'
-    },
+export function getServerSideProps(context: any) {
 
-    {
-      id: 'CS-1002',
-      name: 'Discrete Math',
-      credits: 4,
-      des: 'The second intro class bro'
-    },
-
-    {
-      id: 'CS-1221',
-      name: 'Data Structures',
-      credits: 4,
-      des: 'The third intro class bro'
+  return {
+    props: {
+      classes: CSData as ClassData[]
     }
+  }
 
-  ]
+} 
+ 
+export default function Home({ classes }: InferGetStaticPropsType<typeof getServerSideProps>) {
+
+   console.log(classes);
+
+  // const classes = [
+  //   {
+  //     id: 'CS-1001',
+  //     name: 'Intro to CS',
+  //     credits: 4,
+  //     des: 'The intro class bro'
+  //   },
+
+  //   {
+  //     id: 'CS-1002',
+  //     name: 'Discrete Math',
+  //     credits: 4,
+  //     des: 'The second intro class bro'
+  //   },
+
+  //   {
+  //     id: 'CS-1221',
+  //     name: 'Data Structures',
+  //     credits: 4,
+  //     des: 'The third intro class bro'
+  //   }
+
+  // ]
 
   //@ts-ignore
   function handleClick(e) {
@@ -85,7 +106,7 @@ export const Home: NextPage = () => {
                   <div className="flex-none p-3 pl-4 mt-4 w-[100%] bg-sky-100 rounded">
                     <p className="text-xs">{id}</p>
                     <h3 className="text-l font-semibold" key={name}>{name}</h3>
-                    <p>{des}</p>
+                    <p>{des.slice(0,80)}...</p>
                   </div>
                 </Draggable>
               </li>
@@ -108,5 +129,3 @@ export const Home: NextPage = () => {
     </div>
   )
 }
-
-export default Home;
