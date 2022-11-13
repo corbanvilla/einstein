@@ -146,38 +146,63 @@ export default function Home({ classes }: InferGetStaticPropsType<typeof getServ
       
       {/*content - sticky*/}
        <div className="sticky bottom-0 right-0 h-[20%] h-min-[800px] p-6 ml-[288px] bg-white z-50">
-          <h2 className="text-xl font-semibold mb-2">Requirements</h2>
+          <h2 className="text-xl font-semibold mb-2">Your Goal: Computer Science Major, Interactive Media Minor</h2>
 
-          <div className="grid grid-cols-5">
+          <div className="grid grid-cols-4">
 
             <div className="col-span-1 col-start-1">
-                <h2 className="text-l font-semibold mb-2">CS Major</h2>
+                <h2 className="font-medium mb-2">Major Requirements</h2>
                 <input type="checkbox"/>
-                <label> Class 1</label><br/>
+                <label className="text-xs"> CS-UH 1001: Intro to CS</label><br/>
                 <input type="checkbox"/>
-                <label> Class 2</label><br/>
+                <label className="text-xs"> CS-UH 1002: Discrete Math</label><br/>
                 <input type="checkbox"/>
-                <label> Class 3</label><br/>
+                <label className="text-xs"> CS-UH 1050: Data Structures</label><br/>
                 <input type="checkbox"/>
-                <label> Class 4</label><br/>
+                <label className="text-xs"> CS-UH 1052: Algorithms</label><br/>
                 <input type="checkbox"/>
-                <label> Class 5</label><br/>
+                <label className="text-xs"> CS-UH 2010: CSO</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> CS-UH 2012: Software Eng</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> CS-UH 3010: OS</label><br/>
             </div>
 
             <div className="col-span-1 col-start-2">
-                <h2 className="text-l font-semibold mb-2">CS Major</h2>
+                <h2 className="mb-2 font-medium text-white"> rrr  </h2>
                 <input type="checkbox"/>
-                <label> Class A</label><br/>
+                <label className="text-xs"> CS-UH 3012: Computer Networks</label><br/>
                 <input type="checkbox"/>
-                <label> Class 2</label><br/>
+                <label className="text-xs"> MATH-UH 1012Q: Calculus</label><br/>
                 <input type="checkbox"/>
-                <label> Class 3</label><br/>
+                <label className="text-xs"> CS-UH 3090 Research Sem (1/2)</label><br/>
                 <input type="checkbox"/>
-                <label> Class 4</label><br/>
+                <label className="text-xs"> CS Elective</label><br/>
                 <input type="checkbox"/>
-                <label> Class 5</label><br/>
+                <label className="text-xs"> CS Elective</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> CS Capstone</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> CS Capstone</label><br/>
             </div>
 
+            <div className="col-span-1 col-start-3">
+                <h2 className="mb-2 font-medium">Core Curriculum</h2>
+                <input type="checkbox"/>
+                <label className="text-xs"> FYWS</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> Colloquium</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> Colloquium</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> Core: CCEA</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> Core: CSTS</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> Core: CADT</label><br/>
+                <input type="checkbox"/>
+                <label className="text-xs"> Core: CDAD</label><br/>
+            </div>
 
           </div>
 
