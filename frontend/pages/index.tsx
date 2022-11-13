@@ -153,7 +153,7 @@ export default function Home({ classes }: InferGetStaticPropsType<typeof getServ
             <p className="text-black-700">Add class here</p>
           </div> */}
 
-          <ul>
+          <ul className="pl-6 pr-6 flex-wrap">
             {classes.map(({id, name, des, timings}) => (
               <li onClick={() => handleShow(name, des, timings)} key={id} className="z-5">
                 <Draggable
