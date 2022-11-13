@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect } from 'react';
 import styles from '../styles/Home.module.css'
+import { InferGetStaticPropsType } from 'next'
 
 import Draggable from 'react-draggable';
 import React from 'react'
@@ -26,7 +28,7 @@ const printCoords = (i:any, data:any) => {
   console.log(data);
 }
  
-const Home: NextPage = () => {
+export const Home: NextPage = () => {
 
   const classes = [
     {
@@ -52,6 +54,7 @@ const Home: NextPage = () => {
 
   ]
 
+  //@ts-ignore
   function handleClick(e) {
     console.log('click');
     e.target.style.backgroundColor = 'blue';
@@ -64,9 +67,9 @@ const Home: NextPage = () => {
       <div className="flex items-stretch bg-grey-lighter min-h-screen">
 
         {/*sidebar - scrollable*/}
-        <div className="flex-none p-6 w-[20%] bg-blue-300">
+        <div className="flex-none p-6 w-[20%] bg-blue-300 z-10">
 
-        <h2 className="text-2xl font-semibold">Classes</h2>
+          <h2 className="text-2xl font-semibold">Classes</h2>
 
           {/* <div className="flex-none p-2 pl-4 w-[100%] bg-sky-100 rounded-2xl">
             <p className="text-black-700">Add class here</p>
@@ -106,4 +109,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Home;
