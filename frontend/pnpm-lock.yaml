@@ -5,6 +5,7 @@ specifiers:
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.8
   autoprefixer: ^10.4.13
+  bootstrap: 5.2.2
   eslint: 8.27.0
   eslint-config-next: 13.0.3
   next: 13.0.3
@@ -15,6 +16,7 @@ specifiers:
   typescript: 4.8.4
 
 dependencies:
+  bootstrap: 5.2.2
   next: 13.0.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -485,6 +487,12 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
     dev: true
+
+  /bootstrap/5.2.2:
+    resolution: {integrity: sha512-dEtzMTV71n6Fhmbg4fYJzQsw1N29hJKO1js5ackCgIpDcGid2ETMGC6zwSYw09v05Y+oRdQ9loC54zB1La3hHQ==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.6
+    dev: false
 
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
