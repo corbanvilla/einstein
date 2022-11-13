@@ -32,9 +32,17 @@ interface ClassData {
 //   console.log(data);
 // }
 
+let creditSum = 0;
+
 const printCoords = (i:any, data:any) => {
-  console.log(i);
+  //console.log(i);
   console.log(data);
+
+  if (data.x>289 && data.x<575) { //first column
+
+  }
+
+  //console.log(data.node);
 }
 
 export function getServerSideProps(context: any) {
@@ -46,67 +54,42 @@ export function getServerSideProps(context: any) {
   }
 
 } 
+
+
  
 export default function Home({ classes }: InferGetStaticPropsType<typeof getServerSideProps>) {
 
    console.log(classes);
 
-  // const classes = [
-  //   {
-  //     id: 'CS-1001',
-  //     name: 'Intro to CS',
-  //     credits: 4,
-  //     des: 'The intro class bro'
-  //   },
-
-  //   {
-  //     id: 'CS-1002',
-  //     name: 'Discrete Math',
-  //     credits: 4,
-  //     des: 'The second intro class bro'
-  //   },
-
-  //   {
-  //     id: 'CS-1221',
-  //     name: 'Data Structures',
-  //     credits: 4,
-  //     des: 'The third intro class bro'
-  //   }
-
-  // ]
-
   //@ts-ignore
   function handleClick(e) {
+    window.screen.height
     console.log('click');
     e.target.style.backgroundColor = 'blue';
   }
-  
 
   return (
+
     <div className="container max-w-full w-full h-full max-h-full">
 
       <div className="flex items-stretch bg-grey-lighter min-h-screen">
 
         {/*sidebar - scrollable*/}
-        <div className="flex-none p-6 w-[20%] bg-blue-300 z-10">
+        <div className="flex-flow w-[20%] bg-gray-200 z-10">
 
-          <h2 className="text-2xl font-semibold">Classes</h2>
+          <h2 className="text-2xl font-semibold bg-gray-200 sticky top-0 p-6 pt-4 pb-4 z-20">Classes</h2>
 
-          {/* <div className="flex-none p-2 pl-4 w-[100%] bg-sky-100 rounded-2xl">
-            <p className="text-black-700">Add class here</p>
-          </div> */}
-
-          <ul>
+          <ul className="pl-6 pr-6 flex-wrap">
             {classes.map(({id, name, des}) => (
-              <li key={id} className="z-5">
+              <li key={id}>
                 <Draggable
                   onDrag={printCoords}
-                  grid={[360, 500]}
+                  grid={[289, 20]}
                 >
-                  <div className="flex-none p-3 pl-4 mt-4 w-[100%] bg-sky-100 rounded">
+                  <div className="flex-none p-3 pl-4 mt-4 w-[100%] bg-white rounded">
                     <p className="text-xs">{id}</p>
                     <h3 className="text-l font-semibold" key={name}>{name}</h3>
-                    <p>{des.slice(0,80)}...</p>
+                    {/* <p>{des.slice(0,80)}...</p> */}
                   </div>
                 </Draggable>
               </li>
@@ -116,9 +99,34 @@ export default function Home({ classes }: InferGetStaticPropsType<typeof getServ
         </div>
         
         {/*sidebar2*/}
-        <div className="flex-none bg-red-200 fh-screen sticky p-6 w-[20%] z-0">
-          <h2 className="text-2xl font-semibold">My Schedule</h2>
-          <p className="">Credits: <span className="creditSum">0</span></p>
+        <div className="flex-none bg-red-200 fh-screen w-[20%]">
+          <div className="bg-red-200 p-6 pt-4 pb-3 sticky top-0 z-20">
+            <h2 className="text-2xl font-semibold">Freshman Year</h2>
+            <p className="">Credits: <span className="creditSum">0</span></p>
+          </div>
+        </div>
+        
+        {/*sidebar2*/}
+        <div className="flex-none bg-blue-200 fh-screen w-[20%]">
+          <div className="bg-blue-200 p-6 pt-4 pb-3 sticky top-0 z-20">
+            <h2 className="text-2xl font-semibold">Sophomore Year</h2>
+            <p className="">Credits: <span className="creditSum">0</span></p>
+          </div>
+        </div>
+
+        {/*sidebar2*/}
+        <div className="flex-none bg-yellow-200 fh-screen w-[20%]">
+          <div className="bg-yellow-200 p-6 pt-4 pb-3 sticky top-0 z-20">
+            <h2 className="text-2xl font-semibold">Junior Year</h2>
+            <p className="">Credits: <span className="creditSum">0</span></p>
+          </div>
+        </div>
+
+        <div className="flex-none bg-green-200 fh-screen w-[20%]">
+          <div className="bg-green-200 p-6 pt-4 pb-3 sticky top-0 z-20">
+            <h2 className="text-2xl font-semibold">Senior Year</h2>
+            <p className="">Credits: <span className="creditSum">0</span></p>
+          </div>
         </div>
 
         {/*content - sticky*/}
